@@ -1,0 +1,582 @@
+@import url('reset.css');
+
+
+
+/* TEMPLATE CSS
+
+*********************************************/
+
+html {height:100%;}
+
+
+
+body 
+
+{
+	height:100%;
+	font:normal normal normal 90%/110% arial,sans-serif;
+}
+
+/* LAYOUT
+
+*********************************************/
+#page
+{
+	background: url('../images/bg.jpg') top center;
+	height: auto;
+	background-attachment: fixed;
+	color: white;
+}
+
+
+
+#background
+{
+	padding: 0px;
+}
+
+#slogan
+{
+	height: 0px !important;
+	min-height: 0px;
+	padding: 0;
+	margin: 0;
+}
+
+#logo_row .col-md-4
+{
+	margin-top: 15px;
+}
+
+#centre_logo
+{
+	text-align: center;
+}
+
+#centre_logo img
+{
+	width: 100%;
+	height: auto;
+	max-width: 390px;
+	margin-top: 22%;
+}
+
+#logo
+{
+	text-align: center;
+	margin: 0;
+}
+
+#logo img {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  max-width: 370px;
+}
+
+
+@media screen and (max-width: 655px)
+{
+	.row{
+		width: 100%;
+	}
+	#content_wrapper{
+		margin: 30px 0px!important;
+	}
+}
+
+#contact_wrapper
+{
+	margin: 0;
+	text-align: center;
+	padding-top: 1%;
+}
+
+#contact
+{
+
+}
+
+#header_wrapper
+{
+	background: url('../images/header_bg.png') repeat-x;
+}
+
+#menu_wrapper
+{
+	position: relative;
+	z-index: 2;
+}
+
+#facebook
+{
+	margin:15px 1% 0 1%;
+	width: 98%;
+	background-size: contain;
+}
+
+#facebook img 
+{
+	width: 100%;
+	height: auto;
+}
+
+#facebook, #banner, #content_col, #right_col
+{
+
+}
+
+#content_wrapper
+{
+	/*padding: 0 15px 1%;*/
+	position: relative;
+	z-index: 1;
+	margin: 0 15px;
+}
+
+#content_col,#right_col
+{
+	padding: 0 15px;
+}
+
+#content_container
+{
+	background: url('../images/content_bg.png');
+}
+
+#content_col
+{
+	margin: 0;
+  margin-bottom: 60px;
+}
+
+#content_foot
+{
+	margin: 0;
+}
+
+#credit
+{
+	color: white;
+	text-align: center;
+}
+
+.credit-link {
+    font-size: 0px;
+    width: 100px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.credit-link img
+{
+	display: inline-block;
+	width: 100%;
+}
+
+/*#right_col
+{
+	margin-left: 0;
+	width: 33.3333%;
+}*/
+
+/**** Content Styling ****/
+#main_menu
+{
+	position: relative;
+}
+
+#indoor_cricket 
+{
+	padding-top: 5px;
+}
+
+.contentpaneresults
+{
+	background-color:white;
+}
+
+#contact_menu_h .maximenuck .maximenuck.level1
+{
+	max-width: 200px !important;
+	width: 48% !important;
+	margin: 2% !important;
+}
+
+#contact_menu_h
+{
+	width: 94%;
+	margin: 0 auto;
+}
+
+.page-header
+{
+	margin:0;
+}
+
+.page-header h2
+{
+	margin: 0 1%;
+}
+
+h2
+{
+	font-size: 2em;
+}
+
+.item-page
+{
+	margin-top: 30px;
+}
+
+.item-page p img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.moduletable.sidebar_title, .maximenuckh
+{
+	padding-top: 15px;
+}
+
+#results_menu, #social_menu, #enquiries_menu, #strategic_menu
+{
+	padding-top: 0;
+}
+
+.moduletable .custom p
+{
+	margin: 0;
+}
+
+#right_col .moduletable.sidebar_title img {
+    max-width: 400px;
+    display: inherit;
+    margin: 0 auto;
+}
+
+#facebook .moduletable, #menu .maximenuckh
+{
+	padding-top: 0;
+	margin-left: 15px;
+}
+
+#sports_menu .maximenucklogo img
+{
+	width: 100%;
+}
+
+/*** Google Map on Contact ***/
+#contact_map iframe 
+{
+	width: 100%;
+	height: 400px;
+}
+
+/*** Frontpage Youtube video ***/
+.moduletable_youtube_fp h3 
+{
+	background: url('../../../images/icons/videos-bar-grey1.png') no-repeat;
+	background-size: contain;
+	line-height: 41px;
+	text-indent: -999px;
+}
+
+.moduletable_youtube_fp .custom_youtube_fp iframe
+{
+	width:100%;
+}
+
+phone
+{
+	font-size:3em;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+
+@media (max-width: 980px)
+{
+
+	phone
+	{
+		font-size:2em;
+	}
+}
+
+@media (min-width: 767px)
+{
+/*	#right_col
+	{
+		float: right;
+	}*/
+
+	#content_col
+	{
+		padding-right: 7.5px;
+	}
+}
+
+@media (max-width: 767px)
+{
+/*	#right_col
+	{
+		float: right;
+	}
+
+	#content_col
+	{
+		float: left;
+	}*/
+
+	#centre_logo img
+	{
+		margin-top: 0;
+	}
+
+	#header_wrapper
+	{
+    background: rgba(0, 0, 0, 0.7);
+	}
+
+	#contact_wrapper,
+	#contact_wrapper div.maximenuckh
+	{
+		padding: 0;
+		margin-top: 0 !important;
+	}
+
+	#contact_wrapper col-md-
+	{
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+
+	li.maximenuck.level1
+	{
+    margin-left: 0px !important;
+	}
+
+}
+
+@media (max-width: 720px)
+{
+	#enquiries_menu .maximenuck .maximenuck.level1 
+	{
+		/*width:94% !important;
+		margin-right: 3% !important;*/
+	}
+
+	#logo_row .col-md-4
+	{
+		/*width: 33.33333%;*/
+	}
+
+	#logo_row #logo
+	{
+		padding: 15px;
+	}
+
+	#header_wrapper
+	{
+		margin-bottom: 0px;
+		background-size: cover;
+	}
+
+	#contact_menu_h
+	{
+		padding: 0;
+	}
+
+	#content_foot ul.maximenuck{
+		padding: 15px !important;
+	}
+}
+
+@media only screen and (max-width: 640px)
+{
+	body 
+	{
+		padding-top: 34px !important;
+	}
+
+	#header_wrapper
+	{
+		background-image: url('../images/content_bg.png');
+	}
+
+	#menu
+	{
+		min-height: 0px;
+	}
+}
+
+@media (max-width: 550px)
+{
+	phone
+	{
+		font-size:1.5em;
+	}
+}
+
+@media (max-width: 480px)
+{
+	phone
+	{
+		font-size:1.0em;
+	}
+}
+
+/*** Footer Menu ***/
+#footer_wrapper {
+	/*background-color: #0b0b0b;*/
+  /*margin: 20px 15px 0 15px;*/
+}
+
+#footer {
+	/*margin: 0 2%;
+	width: 96%;*/
+}
+
+#footer_menu
+{
+	/*display: inline-block;*/
+  margin-top: 0;
+  width: auto; 
+  margin-bottom: 0;
+  float: right;
+}
+
+.menu_footer li {
+	/*width: 13.25%; */
+  /* min-width: 75px; */
+  /*padding-left: 1%;*/
+  float: left;
+  font-size: 10px;
+  display: inline-block;
+}
+
+.menu_footer li li {
+	width: 100%;
+	float: left;
+	min-height:0;
+}
+
+.menu_footer li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	/*height: 35px;*/
+}
+
+.menu_footer li a:hover {
+	color: #0088cc;
+	text-decoration: underline !important;
+	background: none !important;
+}
+
+@media (max-width: 1200px)
+{
+	.menu_footer li a 
+	{
+		height: 40px;
+	}
+}
+
+@media (max-width: 980px)
+{
+	.menu_footer li 
+	{
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 720px)
+{
+	.menu_footer li 
+	{
+		font-size: 7px;
+		line-height: 18px;
+		width: 23%;
+		min-height:240px;
+	}
+}
+
+/** Login Screen **/
+#content_wrapper .login,
+#content_wrapper .profile-edit {
+	color: black;
+}
+
+#content_col .control-label label{
+	float: left;
+	text-align: left;
+}
+
+
+/*** Web form ***/
+form input,
+form textarea,
+form select
+{
+  width: 100% !important;
+  max-width: 450px;
+  padding: 0 !important;
+  border: none;
+  height: 30px !important;
+}
+
+form textarea
+{
+	height: auto !important;
+}
+
+form input[type="checkbox"]
+{
+	height: auto !important;
+	max-width: 14px;
+}
+
+form .ccms_form_element input[type="radio"] {
+  width: 6% !important;
+  height: 10px;
+  margin: 0;
+  margin-right: 5%;
+}
+
+form .ccms_form_element label[for="time_slot_0"],
+form .ccms_form_element label[for="time_slot_1"]
+{
+	width: 78%;
+}
+
+input[type="submit"] {
+  max-width: 67px;
+  float: right;
+  color: white;
+  background-color: red;
+  border: 1px #A50000 solid;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+input[type="submit"]:hover {
+  /* color: black; */
+  background-color: #670000;
+}
+
+.ccms_form_element col-md- 
+{
+	width: 100%;
+	color: #888!important;
+}
+
+.ccms_form_element col-md- p
+{
+	margin: 6px 0 9px;
+	float: left;
+}
+
+.floatck
+{
+	z-index: 100;
+}

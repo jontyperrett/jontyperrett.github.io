@@ -1,0 +1,271 @@
+/*------------------------------------------------------------------------
+# author    Xava Design
+# copyright Copyright (C) 2012 Xava Design www.xavadesign.com. All rights reserved.
+# @license  http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Website   http://www.xavadesign.com
+-------------------------------------------------------------------------*/
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {border:0; font-size:100%; margin:0; padding:0;}
+a {outline:none;}
+table {border-collapse:collapse; border-spacing:0;}
+fieldset,img {border:0;}
+img {vertical-align:bottom;}
+del,ins {text-decoration:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%; font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0; font-variant:normal;}
+sup,sub {vertical-align:baseline;}
+legend {color:#000;}
+input,button,textarea,select,optgroup,option {font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit;}
+input,button,textarea,select {font-size:100%;}
+html, address,
+blockquote,
+body, dd, div,
+dl, dt, fieldset, form,
+frame, frameset,
+h1, h2, h3, h4,
+h5, h6, noframes,
+ol, p, ul, center,
+dir, hr, menu, pre   
+{ 
+display: block; 
+unicode-bidi: embed 
+}
+li              { display: list-item }
+head            { display: none }
+table           { display: table }
+tr              { display: table-row }
+thead           { display: table-header-group }
+tbody           { display: table-row-group }
+tfoot           { display: table-footer-group }
+col             { display: table-column }
+colgroup        { display: table-column-group }
+td, th          { display: table-cell }
+caption         { display: table-caption }
+th              { font-weight: bolder; text-align: center }
+caption         { text-align: center }
+body            { margin: 0px }
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+h4, p,
+blockquote, ul,
+fieldset, form,
+ol, dl, dir,
+menu            { margin: 1.12em 0 }
+h5              { font-size: .83em; margin: 1.5em 0 }
+h6              { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,
+h5, h6, b,
+strong          { font-weight: bolder }
+blockquote      { margin-left: 40px; margin-right: 40px }
+i, cite, em,
+var, address    { font-style: italic }
+pre, tt, code,
+kbd, samp       { font-family: monospace }
+pre             { white-space: pre }
+button, textarea,
+input, select   { display: inline-block }
+big             { font-size: 1.17em }
+small, sub, sup { font-size: .83em }
+sub             { vertical-align: sub }
+sup             { vertical-align: super }
+table           { border-spacing: 2px; }
+thead, tbody,
+tfoot           { vertical-align: middle }
+td, th, tr      { vertical-align: inherit }
+s, strike, del  { text-decoration: line-through }
+hr              { border: 1px inset }
+ol, ul, dir,
+menu, dd        { margin-left: 40px }
+ol              { list-style-type: decimal }
+ol ul, ul ol,
+ul ul, ol ol    { margin-top: 0; margin-bottom: 0 }
+u, ins          { text-decoration: underline }
+br:before       { content: "\A"; white-space: pre-line }
+center          { text-align: center }
+:link, :visited { text-decoration: underline }
+:focus          { outline: thin dotted invert }
+/* Begin bidirectionality settings (do not change) */
+BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override }
+BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
+*[DIR="ltr"]    { direction: ltr; unicode-bidi: embed }
+*[DIR="rtl"]    { direction: rtl; unicode-bidi: embed }
+@media print {
+  h1            { page-break-before: always }
+  h1, h2, h3,
+  h4, h5, h6    { page-break-after: avoid }
+  ul, ol, dl    { page-break-before: avoid }
+}
+/**********************************/
+/***** Default Layout Classes *****/
+/**********************************/
+.full-width
+{
+	width:100%;
+}
+/***************************/
+/***** Joomla Specific *****/
+/***************************/
+	.actions
+	{
+		list-style-type: none;
+		display: inline-block;
+		width: 100%;
+		margin: 0px;
+	}
+	.actions li
+	{
+		display: inline;
+		float: right;
+		margin-left: 10px !important;
+	}
+	.pdf_link
+	{
+		padding-left: 14px;
+		background: url('../images/default_images/pdf_icon.gif') no-repeat left center;
+	}
+	.item-separator
+	{
+		background: url('../images/item_separator.png') repeat-x;
+		height: 42px;
+		width: 300px;
+		margin: 0 auto 100px auto;	
+	}
+	.breadcrumbs
+	{
+		/*font-weight: bold;*/
+	}
+	.breadcrumbs:link, .breadcumbs:visited
+	{
+		text-decoration: none;
+	}
+	#content ul li
+	{
+		margin-left: 25px;
+	}
+/***** Pagination *****/
+	.pagination .counter
+	{
+		text-align: center;
+	}
+	.pagination ul
+	{
+		height: 20px;
+		width: 40%;
+		margin: 0 auto;
+	}
+	.pagination li
+	{
+		float: left;
+		margin: 0 10px;
+		list-style-type: none;
+		height: 19px;
+		width: 19px;
+		color: gray;
+	}
+	.pagination li a:visited, .pagination li a:link
+	{
+		text-decoration: none;
+		color: whitesmoke;
+	}
+	.pagination li span /*** When selection greyed out ***/
+	{
+	/** Need different color icons for these **/
+		background-image: url('../images/default/button.png');
+		padding: 2px 6px;
+		display: block;
+	}
+	.pagination li a
+	{
+		background-image: url('../images/default/button.png');
+		padding: 2px 6px;
+		display: block;
+	}
+	li.pagination-start
+	{
+		margin-left: 22px;
+	}
+	li.pagination-start a
+	{
+		background-image: url('../images/default/start.png');
+		width: 22px;
+		text-indent: -9999px;
+		display: block;
+	}
+	li.pagination-end a
+	{
+		background-image: url('../images/default/end.png');
+		width: 22px;
+		text-indent: -9999px;
+		display: block;
+	}
+	li.pagination-prev a
+	{
+		background-image: url('../images/default/prev.png');
+		width: 18px;
+		text-indent: -9999px;
+		display: block;
+	}
+	li.pagination-next a
+	{
+		background-image: url('../images/default/next.png');
+		width: 18px;
+		text-indent: -9999px;
+		display: block;
+	}
+	li.pagination-start span /*** When selection greyed out ***/
+	{
+	/** Need different color icons for these **/
+		background-image: url('../images/default/start.png');
+		width: 22px;
+		text-indent: -9999px;
+		display: block;
+	}
+	li.pagination-end span /*** When selection greyed out ***/
+	{
+	/** Need different color icons for these **/
+		background-image: url('../images/default/end.png');
+		width: 22px;
+		text-indent: -9999px;
+		display: block;
+	}
+	li.pagination-prev span /*** When selection greyed out ***/
+	{
+	/** Need different color icons for these **/
+		background-image: url('../images/default/prev.png');
+		width: 18px;
+		text-indent: -9999px;
+		display: block;
+	}
+	li.pagination-next span /*** When selection greyed out ***/
+	{
+	/** Need different color icons for these **/
+		background-image: url('../images/default/next.png');
+		width: 18px;
+		text-indent: -9999px;
+		display: block;
+	}
+	/***********************/
+	/***** Chronoforms *****/
+	/***********************/
+	.ccms_form_element
+	{
+	}
+	.Chronoform input, .ccms_form_element input, .ccms_form_element textarea, .ccms_form_element select
+	{
+		border: solid 1px #999;
+	}
+	.Chronoform h2
+	{
+		font-size: 26px;
+	}
+	.Chronoform h3
+	{
+		font-size: 20px;
+	}
+	.chronoform
+	{
+		visibility: hidden;
+	}
